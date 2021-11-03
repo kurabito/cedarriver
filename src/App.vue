@@ -43,4 +43,7 @@ main
 	margin: 0 auto 10px auto;
   width: 720px;
 }
+h2, h3, p {
+  text-align: left;
+}
 </style>

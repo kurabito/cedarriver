@@ -4,7 +4,9 @@ import {
 } from 'vue-router';
 import Home from './components/Home.vue';
 import About from './components/About.vue';
-// import ABVfromSGandBrix from './components/ABVfromSGandBrix.vue';
+import News from './components/News/News.vue';
+import NewsItems from './components/News/Items.vue';
+import Bimy from './components/News/Bimy.vue';
 // import StrikeWater from './components/StrikeWater.vue';
 
 export default () =>
@@ -21,10 +23,23 @@ export default () =>
         name: 'About',
         component: About
       },
+      {
+        path: '/news',
+        name: 'News',
+        component: News,
+        children: [
+          { path: '',
+            component: NewsItems
+          },
+          { path: 'bimy',
+            component: Bimy
+          }
+        ]
+      },
       // {
-      //   path: '/abvogfg',
-      //   name: 'ABV from OG and SG',
-      //   component: ABVfromOGandFG
+      //   path: '/news/bimy',
+      //   name: 'Bimy',
+      //   component: Bimy
       // },
       // {
       //   path: '/abvsgbrix',

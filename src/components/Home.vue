@@ -26,10 +26,8 @@ export default {
         return bucket + "taru.jpg" 
       }
       return bucket + "nigori.jpg"
-      // return "https://cedarriver.s3.us-west-2.amazonaws.com/banner.jpg"
     }
   }
-  // const imageURI = "https://cedarriver.s3.us-west-2.amazonaws.com/banner.jpg"
 }
 </script>
 
