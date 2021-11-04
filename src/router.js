@@ -7,6 +7,9 @@ import About from './components/About.vue';
 import News from './components/News/News.vue';
 import NewsItems from './components/News/Items.vue';
 import Bimy from './components/News/Bimy.vue';
+import Yamagata from './components/News/Yamagata.vue';
+import SakeBunka from './components/News/SakeBunka.vue';
+import Ibuki from './components/News/Ibuki.vue';
 // import StrikeWater from './components/StrikeWater.vue';
 
 export default () =>
@@ -33,7 +36,16 @@ export default () =>
           },
           { path: 'bimy',
             component: Bimy
-          }
+          },
+          { path: 'yamagata',
+            component: Yamagata
+          },
+          { path: 'sakebunka',
+            component: SakeBunka
+          },
+          { path: 'ibuki',
+            component: Ibuki
+          },
         ]
       },
       // {

@@ -18,11 +18,3 @@ export default {
         <a :href="bucket + 'bimy-4.jpg'" target="_blank"><img :src="bucket + 'bimy-4.jpg'" alt="Bimy article bottom of page" /></a>
     </p>
 </template>
-
-<style scoped>
-  img {
-    max-width: 700px;
-    height: auto;
-    margin-top: 10px;
-  }
-</style>

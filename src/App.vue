@@ -30,6 +30,9 @@ a {
   text-decoration: none;
   color: Red;
 }
+a:hover {
+	text-decoration : underline
+}
 nav > a {
   margin-right: 15px;
   font-size: 12px;
@@ -46,4 +49,9 @@ main
 h2, h3, p {
   text-align: left;
 }
+  img {
+    max-width: 700px;
+    height: auto;
+    margin-top: 10px;
+  }
 </style>
