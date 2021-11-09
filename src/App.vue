@@ -1,4 +1,12 @@
-<script setup>
+<script>
+export default {
+  name: 'App',
+  data() {
+    return {
+      bucket: "https://cedarriver.s3.us-west-2.amazonaws.com/"
+    }
+  }
+}
 </script>
 
 <template>
@@ -49,9 +57,16 @@ main
 h2, h3, p {
   text-align: left;
 }
-  img {
-    max-width: 700px;
-    height: auto;
-    margin-top: 10px;
-  }
+img {
+  max-width: 700px;
+  height: auto;
+  margin-top: 10px;
+}
+.product-text {
+  max-width: 400px;
+  float: left; 
+}
+.product-image {
+  float: right; 
+}
 </style>

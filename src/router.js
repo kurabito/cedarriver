@@ -10,7 +10,9 @@ import Bimy from './components/News/Bimy.vue';
 import Yamagata from './components/News/Yamagata.vue';
 import SakeBunka from './components/News/SakeBunka.vue';
 import Ibuki from './components/News/Ibuki.vue';
-// import StrikeWater from './components/StrikeWater.vue';
+import Sake from './components/Sake/Sake.vue';
+import Products from './components/Sake/Products.vue';
+import Junmai from './components/Sake/Junmai.vue';
 
 export default () =>
   createRouter({
@@ -45,6 +47,19 @@ export default () =>
           },
           { path: 'ibuki',
             component: Ibuki
+          },
+        ]
+      },
+      {
+        path: '/sake',
+        name: 'Sake',
+        component: Sake,
+        children: [
+          { path: '',
+            component: Products
+          },
+          { path: 'junmai',
+            component: Junmai
           },
         ]
       },
