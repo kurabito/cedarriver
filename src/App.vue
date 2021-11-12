@@ -1,11 +1,14 @@
 <script>
+// import Home from "./components/Home.vue";
 export default {
-  name: 'App',
-  data() {
-    return {
-      bucket: "https://cedarriver.s3.us-west-2.amazonaws.com/"
-    }
-  }
+    name: "App",
+    // data() {
+    //   return {
+    //     bucket: "https://cedarriver.s3.us-west-2.amazonaws.com/"
+    //   }
+    // }
+    inject: ["bucket"],
+    // components: { Home }
 }
 </script>
 
@@ -18,10 +21,9 @@ export default {
     <router-link to="/find">Find</router-link>
     <router-link to="/contact">Contact</router-link>
   </nav>
-  <div>
-      <img src="https://cedarriver.s3.us-west-2.amazonaws.com/banner.jpg" alt="Cedar River Brewing Company" title="Cedar River Brewing Company" width="640" height="72" />
-  </div>
   <main>
+    <!-- <img src="https://cedarriver.s3.us-west-2.amazonaws.com/banner.jpg" alt="Cedar River Brewing Company" title="Cedar River Brewing Company" /> -->
+    <img :src="bucket + 'banner.jpg'" alt="Cedar River Brewing Company" title="Cedar River Brewing Company" />
     <router-view />
   </main>
 </template>
@@ -52,21 +54,22 @@ nav > a {
 main
 {
 	margin: 0 auto 10px auto;
-  width: 720px;
+  max-width: 720px;
 }
 h2, h3, p {
   text-align: left;
 }
 img {
-  max-width: 700px;
-  height: auto;
+  max-width: 100%;
+  max-height: auto;
   margin-top: 10px;
 }
 .product-text {
-  max-width: 400px;
+  max-width: 60%;
   float: left; 
 }
 .product-image {
+  max-width: 40%;
   float: right; 
 }
 </style>
