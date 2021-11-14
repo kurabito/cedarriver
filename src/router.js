@@ -13,6 +13,9 @@ import Ibuki from './components/News/Ibuki.vue';
 import Sake from './components/Sake/Sake.vue';
 import Products from './components/Sake/Products.vue';
 import Junmai from './components/Sake/Junmai.vue';
+import Nama from './components/Sake/Nama.vue';
+import Nigori from './components/Sake/Nigori.vue';
+import Taru from './components/Sake/Taru.vue';
 
 export default () =>
   createRouter({
@@ -47,7 +50,7 @@ export default () =>
           },
           { path: 'ibuki',
             component: Ibuki
-          },
+          }
         ]
       },
       {
@@ -61,6 +64,15 @@ export default () =>
           { path: 'junmai',
             component: Junmai
           },
+          { path: 'nama',
+            component: Nama
+          },
+          { path: 'nigori',
+            component: Nigori
+          },
+          { path: 'taru',
+            component: Taru
+          }
         ]
       },
       // {

@@ -72,4 +72,7 @@ img {
   max-width: 40%;
   float: right; 
 }
+#signature {
+  max-width: 200px;
+}
 </style>
