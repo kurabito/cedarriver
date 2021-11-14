@@ -17,6 +17,7 @@ import Nama from './components/Sake/Nama.vue';
 import Nigori from './components/Sake/Nigori.vue';
 import Taru from './components/Sake/Taru.vue';
 import Find from './components/Find.vue';
+import Contact from './components/Contact.vue';
 
 export default () =>
   createRouter({
@@ -81,15 +82,10 @@ export default () =>
         name: 'Find',
         component: Find
       },
-      // {
-      //   path: '/abvsgbrix',
-      //   name: 'ABV from SG and Brix',
-      //   component: ABVfromSGandBrix
-      // },
-      // {
-      //   path: '/strikewater',
-      //   name: '/Strike Water Temperature',
-      //   component: StrikeWater
-      // }
+      {
+        path: '/contact',
+        name: 'Contact',
+        component: Contact
+      }
     ]
   });

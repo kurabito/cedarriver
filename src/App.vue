@@ -51,12 +51,15 @@ nav > a {
 .router-link-active {
   color: red
 }
+.dead-link {
+  color: red
+}
 main
 {
 	margin: 0 auto 10px auto;
   max-width: 720px;
 }
-h2, h3, p {
+h3, p {
   text-align: left;
 }
 img {
@@ -78,5 +81,11 @@ img {
 }
 #signature {
   max-width: 200px;
+}
+#social {
+	margin: auto;
+}
+#social > a {
+  padding: 20px;
 }
 </style>
