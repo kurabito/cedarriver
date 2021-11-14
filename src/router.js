@@ -16,6 +16,7 @@ import Junmai from './components/Sake/Junmai.vue';
 import Nama from './components/Sake/Nama.vue';
 import Nigori from './components/Sake/Nigori.vue';
 import Taru from './components/Sake/Taru.vue';
+import Find from './components/Find.vue';
 
 export default () =>
   createRouter({
@@ -75,11 +76,11 @@ export default () =>
           }
         ]
       },
-      // {
-      //   path: '/news/bimy',
-      //   name: 'Bimy',
-      //   component: Bimy
-      // },
+      {
+        path: '/find',
+        name: 'Find',
+        component: Find
+      },
       // {
       //   path: '/abvsgbrix',
       //   name: 'ABV from SG and Brix',

@@ -64,6 +64,10 @@ img {
   max-height: auto;
   margin-top: 10px;
 }
+#news-items {
+	margin: auto;
+  max-width: 80%;
+}
 .product-text {
   max-width: 60%;
   float: left; 

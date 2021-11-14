@@ -1,4 +1,4 @@
 <template>
-    <h2>News</h2>
+    <h1>News</h1>
     <router-view></router-view>
 </template>
