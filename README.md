@@ -1,6 +1,6 @@
-# Vue 3 + Vite
+# Cedar River Brewing Company
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This is the refactored website for Cedar River Brewing Company.  It was developed using Vue 3 in Vite.
 
 ## Recommended IDE Setup
 
