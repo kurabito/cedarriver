@@ -1,11 +1,7 @@
 <script>
 export default {
-  name: 'Yamagata',
-  data() {
-    return {
-      bucket: "https://cedarriver.s3.us-west-2.amazonaws.com/"
-    }
-  }
+    name: 'Yamagata',
+    inject: ['bucket']
 }
 </script>
 

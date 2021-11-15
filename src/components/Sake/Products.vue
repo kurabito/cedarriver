@@ -1,11 +1,5 @@
 <script>
 export default {
-//   name: 'Products',
-//   data() {
-//     return {
-//     //   bucket: "https://cedarriver.s3.us-west-2.amazonaws.com/"
-//     }
-//   }
     inject: ['bucket']
 }
 </script>

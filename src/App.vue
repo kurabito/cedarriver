@@ -1,14 +1,7 @@
 <script>
-// import Home from "./components/Home.vue";
 export default {
     name: "App",
-    // data() {
-    //   return {
-    //     bucket: "https://cedarriver.s3.us-west-2.amazonaws.com/"
-    //   }
-    // }
     inject: ["bucket"],
-    // components: { Home }
 }
 </script>
 
@@ -22,7 +15,6 @@ export default {
     <router-link to="/contact">Contact</router-link>
   </nav>
   <main>
-    <!-- <img src="https://cedarriver.s3.us-west-2.amazonaws.com/banner.jpg" alt="Cedar River Brewing Company" title="Cedar River Brewing Company" /> -->
     <img :src="bucket + 'banner.jpg'" alt="Cedar River Brewing Company" title="Cedar River Brewing Company" />
     <router-view />
   </main>

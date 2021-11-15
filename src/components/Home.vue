@@ -1,16 +1,9 @@
 <script>
 export default {
   name: 'Home',
-  // data() {
-  //   return {
-  //     // bucket: "https://cedarriver.s3.us-west-2.amazonaws.com/"
-  //   }
-  // },
   inject: ['bucket'],
   computed: {
     imageName() {
-      // const bucket = "https://cedarriver.s3.us-west-2.amazonaws.com/"
-      // const bucket = this.bucket
       const today = new Date()
       const month = today.getMonth()
       const date = today.getDay()
